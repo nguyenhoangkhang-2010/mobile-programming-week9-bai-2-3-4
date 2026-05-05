@@ -35,7 +35,7 @@ class _AddContactScreenState extends State<AddContactScreen> {
     if (_nameController.text.isEmpty || _phoneController.text.isEmpty) return;
 
     final contactData = MyContact(
-      id: widget.contact?.id, // Quan trọng: Giữ ID cũ nếu đang sửa
+      id: widget.contact?.id,
       name: _nameController.text,
       phone: _phoneController.text,
       email: _emailController.text,
