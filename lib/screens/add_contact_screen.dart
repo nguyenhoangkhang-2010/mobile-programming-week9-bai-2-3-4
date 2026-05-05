@@ -21,7 +21,6 @@ class _AddContactScreenState extends State<AddContactScreen> {
   @override
   void initState() {
     super.initState();
-    // Nếu có contact truyền vào, điền dữ liệu cũ vào form
     if (widget.contact != null) {
       _nameController.text = widget.contact!.name;
       _phoneController.text = widget.contact!.phone;
